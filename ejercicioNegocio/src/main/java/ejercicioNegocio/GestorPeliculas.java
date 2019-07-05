@@ -3,17 +3,18 @@ package ejercicioNegocio;
 import java.util.Collection;
 import java.util.List;
 import ejercicio.modelo.Pelicula;
-import ejercicioDao.Factory;
 import ejercicioDao.IDao;
 
 public class GestorPeliculas {
 	private IDao<Pelicula> daoPeliculas;
 	
-	public GestorPeliculas() {
-		super();
-		this.daoPeliculas = Factory.getDaoPeliculas();
-	}
 	
+	public IDao<Pelicula> getDaoPeliculas() {
+		return daoPeliculas;
+	}
+	public void setDaoPeliculas(IDao<Pelicula> daoPeliculas) {
+		this.daoPeliculas = daoPeliculas;
+	}
 	public void altaPelicula(List<Pelicula> peliculas) {
 		for (Pelicula pelicula : peliculas)
 			daoPeliculas.create(pelicula);

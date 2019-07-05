@@ -9,13 +9,6 @@ public class Pelicula {
 	private String sinopsis;
 	private List<Categoria> categorias;
 	
-	public Pelicula(String titulo, Director director, String sinopsis, List<Categoria> categorias) {
-		super();
-		this.titulo = titulo;
-		this.director = director;
-		this.sinopsis = sinopsis;
-		this.categorias = categorias;
-	}
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -71,8 +64,7 @@ public class Pelicula {
 	}
 	@Override
 	public String toString() {
-		return "Pelicula [titulo=" + titulo + ", director=" + director + ", sinopsis=" + sinopsis + ", categorias="
-				+ categorias + "]";
+		return "Pelicula titulo=" + titulo +". ";
 	}
 	
 

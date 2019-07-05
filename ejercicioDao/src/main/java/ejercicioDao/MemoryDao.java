@@ -9,8 +9,11 @@ public class MemoryDao implements IDao<Pelicula>{
 	private Map<Integer,Pelicula> miMapa;
 	
 
-	public MemoryDao(Map<Integer, Pelicula> miMapa) {
-		super();
+	public Map<Integer, Pelicula> getMiMapa() {
+		return miMapa;
+	}
+
+	public void setMiMapa(Map<Integer, Pelicula> miMapa) {
 		this.miMapa = miMapa;
 	}
 
