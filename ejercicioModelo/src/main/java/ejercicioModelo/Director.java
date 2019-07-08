@@ -1,4 +1,4 @@
-package ejercicio.modelo;
+package ejercicioModelo;
 
 public class Director {
 	private String name;

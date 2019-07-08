@@ -2,9 +2,17 @@ package ejercicioDao;
 
 import java.util.Collection;
 import java.util.Map;
-import ejercicio.modelo.Pelicula;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Repository;
+
+import ejercicioModelo.Pelicula;
+
+@Repository
 public class MemoryDao implements IDao<Pelicula>{
+	@Autowired
+	@Qualifier("mapa")
 	private Map<Integer,Pelicula> miMapa;
 	
 

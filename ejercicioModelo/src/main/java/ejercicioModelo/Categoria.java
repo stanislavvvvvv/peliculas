@@ -1,4 +1,4 @@
-package ejercicio.modelo;
+package ejercicioModelo;
 
 public enum Categoria {
 	ACTION,

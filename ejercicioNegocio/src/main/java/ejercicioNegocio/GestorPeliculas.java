@@ -2,10 +2,16 @@ package ejercicioNegocio;
 
 import java.util.Collection;
 import java.util.List;
-import ejercicio.modelo.Pelicula;
-import ejercicioDao.IDao;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import ejercicioDao.IDao;
+import ejercicioModelo.Pelicula;
+
+@Service
 public class GestorPeliculas {
+	@Autowired
 	private IDao<Pelicula> daoPeliculas;
 	
 	

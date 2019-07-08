@@ -1,9 +1,14 @@
-package ejercicio.modelo;
+package ejercicioModelo;
 
 import java.util.List;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
+@Component
+@Scope(value="prototype")
 public class Pelicula {
+	
 	private String titulo;
 	private Director director;
 	private String sinopsis;
@@ -64,7 +69,7 @@ public class Pelicula {
 	}
 	@Override
 	public String toString() {
-		return "Pelicula titulo=" + titulo +". ";
+		return "Pelicula titulo=" + titulo +", " + categorias + ". ";
 	}
 	
 
