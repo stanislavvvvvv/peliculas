@@ -2,7 +2,6 @@ package ejercicioDao;
 
 import java.util.Collection;
 import java.util.Map;
-
 import ejercicio.modelo.Pelicula;
 
 public class MemoryDao implements IDao<Pelicula>{

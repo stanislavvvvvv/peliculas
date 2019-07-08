@@ -1,1 +1,10 @@
 /.metadata/
+ejemplo*
+com.sopra.spring.ejemplo04
+target/
+.settings
+.project
+.classpath
+*.class
+classes/
+bin/
