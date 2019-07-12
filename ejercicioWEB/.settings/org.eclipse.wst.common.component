@@ -1,19 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="ejemplo05web">
+        
+    <wb-module deploy-name="ejercicioWEB">
+                
         <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+                
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+                
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+                
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+                
         <dependent-module archiveName="ejercicioNegocio-1.1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ejercicioNegocio/ejercicioNegocio">
+                        
             <dependency-type>uses</dependency-type>
+                    
         </dependent-module>
+                
         <dependent-module archiveName="ejercicioDao-1.1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ejercicioDao/ejercicioDao">
+                        
             <dependency-type>uses</dependency-type>
+                    
         </dependent-module>
+                
         <dependent-module archiveName="ejercicioModelo-1.1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ejercicioModelo/ejercicioModelo">
+                        
             <dependency-type>uses</dependency-type>
+                    
         </dependent-module>
-        <property name="context-root" value="ejemplo05web"/>
-        <property name="java-output-path" value="/ejemplo05web/target/classes"/>
+                
+        <property name="java-output-path" value="/ejercicioWEB/target/classes"/>
+        <property name="context-root" value="ejercicioWEB"/>
+            
     </wb-module>
+    
 </project-modules>
