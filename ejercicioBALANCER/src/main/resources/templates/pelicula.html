@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="#" th:object="${pelicula}" th:action="@{/nuevaPelicula}">
+	<label for="id">Identificador</label>
+		<input type="text" th:field="*{id}" id="id"></br>
+	<label for="titulo">Titulo de la pelicula</label>
+		<input type="text" th:field="*{titulo}" id="titulo"></br>
+	<label for="director">Director</label>
+		<input type="text" th:field="*{director}" id="director"></br>
+	<label for="sinopsis">Sinopsis</label>
+		<input type="text" th:field="*{sinopsis}" id="sinopsis"></br>	
+	<input type="submit" value="alta de nueva pelicula">
+</form>
+<a href th:href="@{/listadoDePeliculas}">Lista de peliculas</a>
+</body>
+</html>
