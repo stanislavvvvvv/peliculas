@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        
+    </head>
+    <body onload="initialize()">
+        <input type="text" id="display"></input>
+        <table>
+            <tr>
+                <td>
+                    <button id="uno" value="1" onclick="sendvalue(this)">1</button>
+                </td>
+                <td>
+                    <button id="dos" value="2" onclick="sendvalue(this)">2</button>
+                </td>
+                <td>
+                    <button id="tres" value="3" onclick="sendvalue(this)">3</button>
+                </td>
+                <td>
+                    <button onclick="sumar()" onclick="sendvalue(this)">+</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button id="cuatro" value="4" onclick="sendvalue(this)">4</button>
+                </td>
+                <td>
+                    <button id="cinco" value="5" onclick="sendvalue(this)">5</button>
+                </td>
+                <td>
+                    <button id="seis" value="6" onclick="sendvalue(this)">6</button>
+                </td>
+                <td>
+                    <button onclick="restar()">-</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="siete" value="7" onclick="sendvalue(this)">7</button>
+                </td>
+                <td>
+                    <button id="ocho" value="8" onclick="sendvalue(this)">8</button>
+                </td>
+                <td>
+                    <button id="nueve" value="9" onclick="sendvalue(this)">9</button>
+                </td>
+                <td>
+                    <button onclick="multiplicar()">*</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="cero" value="0" onclick="sendvalue(this)">0</button>
+                </td>
+                <td>
+                    <button id="punto">.</button>
+                </td>
+                <td>
+                    <button onclick="calcular()">=</button>
+                </td>
+                <td>
+                    <button onclick="dividir()">/</button>
+                </td>
+            </tr>
+
+            
+            
+            
+        </table>
+    </body>
+    <script type="text/javascript" src="js/calculadora.js"></script>
+</html>

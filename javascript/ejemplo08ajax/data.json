@@ -1,0 +1,9 @@
+[
+    {
+        "nombre" : "stan",
+        "cargo" : "alumno"
+    },{
+        "nombre" : "profe",
+        "cargo" : "profesor"
+    }
+]
