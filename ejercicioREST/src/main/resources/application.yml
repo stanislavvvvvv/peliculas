@@ -1,5 +1,17 @@
 server:
   port: 8809
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8813/eureka/
 spring:
   application:
     name: ejercicioREST
+  datasource:
+    url: jdbc:mysql://localhost:13306/mysql
+    username: root
+    password: ROOT
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:  
+    hibernate:
+      ddl-auto: create

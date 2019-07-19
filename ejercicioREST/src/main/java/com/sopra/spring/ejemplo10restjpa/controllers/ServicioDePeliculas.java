@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.sopra.spring.ejemplo10restjpa.model.AlmacenDeDirectores;
 import com.sopra.spring.ejemplo10restjpa.model.AlmacenDePeliculas;
 import com.sopra.spring.ejemplo10restjpa.model.entities.Pelicula;
 
@@ -18,6 +19,8 @@ import com.sopra.spring.ejemplo10restjpa.model.entities.Pelicula;
 public class ServicioDePeliculas {
 	@Autowired
 	private AlmacenDePeliculas almacen;
+	@Autowired
+	private AlmacenDeDirectores almacen1;
 	
 	public AlmacenDePeliculas getAlmacen() {
 		return almacen;
@@ -36,6 +39,7 @@ public class ServicioDePeliculas {
 	}
 	@PostMapping("/peliculas")
 	public Pelicula nuevoPeliculaEnElInventario(@RequestBody Pelicula pelicula) {
+		almacen1.save(pelicula.getDirector());
 		return almacen.save(pelicula);
 	}
 	@PutMapping("/peliculas/{id}")

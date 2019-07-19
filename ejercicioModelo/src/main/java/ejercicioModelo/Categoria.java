@@ -15,4 +15,5 @@ public enum Categoria {
 	SCIFI,
 	SUPERHERO,
 	WAR;
+
 }

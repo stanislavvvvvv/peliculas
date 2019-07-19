@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-Ejemplo13CloudEurekaApplication<ejemplo13CloudEureka>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.sopra.spring.ejemplo13CloudEureka.Ejemplo13CloudEurekaApplication",
+            "projectName": "ejemplo13CloudEureka",
+            "args": ""
+        }
+    ]
+}
